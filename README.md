@@ -69,38 +69,71 @@ Security Group allowing EC2 instances to access RDS
 Directory Structure
 3-tier-webapp/
 │
+
 ├── .terraform/                     # Terraform's internal files and state
+
 │   ├── .terraform.lock.hcl         # Lock file for provider versions
+
 │   ├── terraform.tfstate           # Current state of your infrastructure
+
 │   └── modules/                    # Cached modules
+
 │
+
 ├── backend.tf                      # Backend configuration for state management
+
 ├── main.tf                         # Main configuration file for resources
+
 ├── providers.tf                    # Provider configuration (e.g., AWS)
+
 ├── terraform.tfvars                # Variable values for the Terraform configuration
+
 ├── variables.tf                    # Variable definitions
+
 │
+
 ├── modules/                        # Custom modules for organizing resources
+
 │   ├── compute/                    # Module for compute resources (EC2, ALB, etc.)
+
 │   │   ├── alb.tf                  # ALB configuration
+
 │   │   ├── autoscaling.tf          # Auto Scaling configuration
+
 │   │   ├── ec2.tf                  # EC2 instance configuration
+
 │   │   ├── outputs.tf              # Outputs for the compute module
+
 │   │   └── variables.tf            # Variables for the compute module
+
 │   │
+
 │   ├── database/                   # Module for database resources (RDS, etc.)
+
 │   │   ├── rds.tf                  # RDS configuration
+
 │   │   ├── outputs.tf              # Outputs for the database module
+
 │   │   └── variables.tf            # Variables for the database module
+
 │   │
+
 │   └── networking/                 # Module for networking resources (VPC, subnets, etc.)
+
 │       ├── vpc.tf                  # VPC configuration
+
 │       ├── subnets.tf              # Subnet configuration
+
 │       ├── nat.tf                  # NAT Gateway configuration
+
 │       ├── security_groups.tf       # Security Groups configuration
+
 │       ├── outputs.tf              # Outputs for the networking module
+
 │       └── variables.tf            # Variables for the networking module
+
 │
+
 └── README.md                       # Documentation for the project
 
 Initializing Terraform
