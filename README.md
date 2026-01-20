@@ -1,12 +1,14 @@
 # 3-Tier-Application-on-AWS-Using-Terraform
 Real-World Scenario: Deploying a Scalable Web Application
 Imagine a scenario where a startup is launching a new e-commerce platform. They expect rapid growth and need a robust infrastructure to support their application. Here’s how a 3-tier architecture deployed on AWS using Terraform can meet their needs:
-Networking: We start by creating a Virtual Private Cloud (VPC) to isolate our resources. Within this VPC, we set up public and private subnets. Public subnets host the web servers, while private subnets contain the application servers and the database.
-Load Balancing: To ensure high availability and distribute incoming traffic, we deploy an Application Load Balancer (ALB). The ALB routes requests to multiple EC2 instances running the web application, allowing us to handle more users simultaneously.
-Auto-Scaling: To manage varying traffic loads, we configure an Auto Scaling group for our EC2 instances. This group automatically adjusts the number of instances based on traffic patterns, ensuring optimal performance without overspending on resources.
-Managed Database: For the database layer, we use AWS RDS. This managed service takes care of routine database tasks, allowing our team to focus on application development rather than database maintenance.
-Static Assets: We leverage AWS S3 to store static assets like images, CSS, and JavaScript files. This offloads traffic from our web servers and improves load times for users.
-DNS Management: Finally, we use AWS Route 53 for DNS management, ensuring that users can easily access our application through a friendly domain name.
+
+1. Networking: We start by creating a Virtual Private Cloud (VPC) to isolate our resources. Within this VPC, we set up public and private subnets. Public subnets host the web servers, while private subnets contain the application servers and the database.
+2. Load Balancing: To ensure high availability and distribute incoming traffic, we deploy an Application Load Balancer (ALB). The ALB routes requests to multiple EC2 instances running the web application, allowing us to handle more users simultaneously.
+3. Auto-Scaling: To manage varying traffic loads, we configure an Auto Scaling group for our EC2 instances. This group automatically adjusts the number of instances based on traffic patterns, ensuring optimal performance without overspending on resources.
+4. Managed Database: For the database layer, we use AWS RDS. This managed service takes care of routine database tasks, allowing our team to focus on application development rather than database maintenance.
+5. Static Assets: We leverage AWS S3 to store static assets like images, CSS, and JavaScript files. This offloads traffic from our web servers and improves load times for users.
+6. DNS Management: Finally, we use AWS Route 53 for DNS management, ensuring that users can easily access our application through a friendly domain name.
+7. 
 In modern application development, scalability, security, and maintainability are crucial. A 3-tier architecture separates the application into:
 
 Presentation Layer (Web Tier) — Handles user interactions.
