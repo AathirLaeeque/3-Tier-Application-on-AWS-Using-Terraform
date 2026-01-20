@@ -20,7 +20,7 @@ Terraform installed on your local machine
 An SSH key pair (.pem file) for connecting to EC2 instances
 Basic understanding of AWS networking (VPC, Subnets, Security Groups, etc.)
 GitHub Repository
-You can find the project repository at: 
+You can find the project repository at: https://github.com/AathirLaeeque/3-Tier-Application-on-AWS-Using-Terraform.git
 
 1. Architecture Overview
 <img width="720" height="461" alt="image" src="https://github.com/user-attachments/assets/29b8cf87-38a7-44ad-b9e7-0df75ec05a90" />
