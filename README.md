@@ -67,6 +67,7 @@ Amazon RDS instance
 Security Group allowing EC2 instances to access RDS
 3. Terraform Code Structure
 Directory Structure
+
 3-tier-webapp/
 │
 
